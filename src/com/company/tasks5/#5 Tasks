@@ -1,0 +1,20 @@
+every task must have tests (maybe some exceptions will be added later)
+
+1. print to console "Привет, <имя_на_русском>!". Pass name to java program via console arg and use main's args parameter to get it in your code.
+E.g.:
+java HelloName Иван
+In code you can get it via args[0]
+
+Zlatopolskiy
+9.15
+9.17
+9.22
+9.23 (todo: exclude)
+9.24 (todo: exclude)
+9.42 (use StringBuilder)
+9.102
+9.166
+
+10.41-57 (exclude 54, 57)
+in 10.51 describe each step of recursion call
+in 10.53 replace input with array

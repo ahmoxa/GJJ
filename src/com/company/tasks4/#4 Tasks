@@ -1,0 +1,55 @@
+Zlatopolskiy
+
+1)+
+    4.15
+    test1:
+    in1 (today m y): 12 2014
+    in2 (bd m y): 6 1985
+    out: 29
+    test2:
+    in1 (today m y): 5 2014
+    in2 (bd m y): 6 1985
+    out: 28
+    test3:
+    in1 (today m y): 6 2014
+    in2 (bd m y): 6 1985
+    out: 29
+
+2)+
+    4.32 (use ternary operator)
+
+3) +
+    4.35
+    test1:
+    in: 3
+    out: red
+    test2:
+    in: 5
+    out: green
+
+4)+
+    4.63
+    test1:
+    in: 5
+    out: Workday
+    test2:
+    in: 7
+    out: Weekend
+
+5)+
+    4.97
+    it is required to find a season by month
+
+6)+
+    5.10
+7)+
+    5.27
+8)+
+    5.64
+9) +
+    6.8 (hint: given numbers are squares)
+10) +
+    6.87
+11)
+    optional:
+    4.106
