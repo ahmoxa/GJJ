@@ -1,0 +1,53 @@
+
+    Shildt Chapter 5
+
+    сделать вывод, как происходит расширение типов в бОльший размер в случае положительных и отрицательных чисел.
+    ----------------------------------------------------------------------------
+1)+
+    будет ли компилироваться
+    1) byte b = 100 ?
+    2) byte b = 100L ?
+    3) int i = 100L ?
+    если нет, то как исправить?
+    -----------------------------
+2)+
+    это задание решать только после понимания правил расширения типов, не выполнять код, пока у вас не будет четкое обоснование результата!
+    какой будет результат выражения (int)(char)(byte)-1 ?
+
+    Zlatopolskiy
+3)+
+    1.16 n,o
+4)+
+    1.17 r,s
+5) +
+    2.13
+6) +
+    2.31
+7) +
+    2.39
+8) -
+    2.43
+9) +?
+    3.26
+10) +
+    3.29
+
+
+
+
+
+    use english in code, comments, commits, everywhere
+
+    classes are named in camel case with capital letter first: Task1_1
+
+    declare variable in the place, where it is supposed to be used
+
+    for parsing console input use Scanner
+
+    do not ignore exceptions in catch block, use at least e.printStackTrace or write meaningful error message
+
+    use commit message template
+    - for completed task beginning with: [DONE] Lesson01 Task1.1
+    - for review fixes: [REVIEW FIXES DONE] Lesson01 and list tasks with comments and describe what comments were fixed
+    Вот что оказывается кинул и мне))
+    по 1 задаче)
