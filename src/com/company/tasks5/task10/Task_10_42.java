@@ -3,7 +3,7 @@ package com.company.tasks5.task10;
 
 public class Task_10_42 {
     public static void main(String[] args) {
-        int result = myPow(4, 2);
+        int result = myPow(4, 3);
         System.out.println(result);
     }
 

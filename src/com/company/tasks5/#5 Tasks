@@ -27,6 +27,24 @@ Zlatopolskiy
 
 
 10)
-    10.41-57 (exclude 54, 57)
+    10.41 +
+    10.42 +
+    10.43a+
+    10.43b+
+    10.44 +
+    10.45a+
+    10.45b+
+    10.46a+
+    10.46b+
+    10.47+
+    10.48+
+    10.49+
+    10.50
+    10.51
+    10.52
+    10.53
+    10.55
+    10.56
+
     in 10.51 describe each step of recursion call
     in 10.53 replace input with array
