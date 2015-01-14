@@ -1,10 +1,10 @@
-11.158 (read notes, that are given before 11.149)
-12.23
-12.24 (in b solve with one arithmetic expression for a[i][j])
-12.25 (tests can be skipped)
-12.28 (solve it for general case n*n, where n%2=1)
-12.63
-12.234 (read notes, that are given before 12.232)
++    11.158 (read notes, that are given before 11.149)
++    12.23
++    12.24 (in b solve with one arithmetic expression for a[i][j])
+    12.25 (tests can be skipped)
+    12.28 (solve it for general case n*n, where n%2=1)
+    12.63
+    12.234 (read notes, that are given before 12.232)
 
 ------------------------------
 13.11
