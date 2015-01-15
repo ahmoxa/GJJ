@@ -1,7 +1,9 @@
-package com.company.tasks7;
+package com.company.tasks7.task_12_25;
 
 
-public class Task_12_25c {
+import com.company.tasks7.Utils;
+
+public class Task_12_25a {
     public static void main(String[] args) {
         int[][] arr = new int[12][10];
         fillArr(arr);
@@ -12,7 +14,7 @@ public class Task_12_25c {
         int count = 1;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                arr[i][arr[i].length - 1 - j] = count++;
+                arr[i][j] = count++;
             }
         }
     }
