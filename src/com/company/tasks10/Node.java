@@ -66,7 +66,7 @@ public class Node implements ValueContainer{
 
     @Override
     public int getLeftHeight() {
-        return left.getHeight();
+        return left == null ? 0 : left.getHeight();
     }
 
     @Override
@@ -76,7 +76,7 @@ public class Node implements ValueContainer{
 
     @Override
     public int getRightHeight() {
-        return right.getHeight();
+        return right == null ? 0 : right.getHeight();
     }
 
     @Override
@@ -86,18 +86,23 @@ public class Node implements ValueContainer{
 
     @Override
     public void updateHeights() {
-        if(left != null)
-            left.updateHeights();
-        if(right != null)
+        if(right != null){
             right.updateHeights();
-
-        this.height = getRightHeight() - getLeftHeight();
+        }
+        if(left != null){
+            left.updateHeights();
+        }
+        height = Math.max(this.getRightHeight(), this.getLeftHeight()) + 1;
     }
 
     @Override
     public boolean isBalanced() {
-        int bfactor = right.getHeight() - left.getHeight();
+        int bfactor = getBalanceFactor();
         return (bfactor >= -1 || bfactor <= 1);
+    }
+
+    public int getBalanceFactor(){
+        return getRightHeight() - getLeftHeight();
     }
 
     @Override
@@ -113,8 +118,15 @@ public class Node implements ValueContainer{
     @Override
     public List<ValueContainer> asList() {
         List<ValueContainer> list = new ArrayList<>();
-        list.add(this);
-
+        inOrder(this, list);
         return list;
+    }
+
+    private void inOrder(ValueContainer node, List<ValueContainer> asList){
+        if(node != null){
+            inOrder(node.getLeft(), asList);
+            asList.add(node);
+            inOrder(node.getRight(), asList);
+        }
     }
 }

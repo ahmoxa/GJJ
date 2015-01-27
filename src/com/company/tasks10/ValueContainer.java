@@ -58,4 +58,6 @@ public interface ValueContainer {
      * @return this subtree as a sorted list of ValueContainers
      */
     List<ValueContainer> asList();
+
+    int getBalanceFactor();
 }
