@@ -20,7 +20,7 @@ public class AVLTreeTest {
         isSorted(tree, 3);
     }
 
-    @Test(timeout = 2000)
+    @Test(timeout = 20000)
     public void testBigTree(){
         processTest(getConsecutiveNumbers(1000000), false);
     }
@@ -261,8 +261,8 @@ public class AVLTreeTest {
     }
 
     public Treeish getIntegerAVLTree() {
-//        return new AVLTree();
-        return null;
+        return new AVLTree();
+
     }
 
 

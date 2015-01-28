@@ -2,6 +2,7 @@ package com.company.tasks10;
 
 
 import java.util.List;
+import java.util.Scanner;
 
 public class TMP {
     public static void main(String[] args) {
@@ -12,12 +13,24 @@ public class TMP {
 //        avlTree.add(6);
 //        avlTree.add(4);
 //        avlTree.add(7);
-        avlTree.add(1);
-        avlTree.add(2);
-        avlTree.add(3);
+        Scanner scanner = new Scanner(System.in);
+        while (true){
+            int i = scanner.nextInt();
+            avlTree.add(i);
+            AVLTreePrinter.printTree(avlTree.getTop());
+        }
+//        avlTree.rotateLeft(avlTree.getContainer(3, avlTree.getTop()));
 
 
-        AVLTreePrinter.printTree(avlTree.getTop());
+
+
+
+
+
+
+//        avlTree.rotateLeft(avlTree.getContainer(3, avlTree.getTop()));
+//        avlTree.rotateRight(avlTree.getContainer(6, avlTree.getTop()));
+//        AVLTreePrinter.printTree(avlTree.getTop());
 
 //        System.out.println("------ROTATE---------");
 //        ValueContainer pivot = avlTree.getContainer(6, avlTree.getTop());
