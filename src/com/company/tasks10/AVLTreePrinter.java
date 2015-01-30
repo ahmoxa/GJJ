@@ -27,7 +27,7 @@ public class AVLTreePrinter {
             String value = vertex.getValue().toString();
 
             if ((parents == null && vertex.getParent() == null) || (parents != null && parents.contains(vertex.getParent()))) {
-                System.out.print(value);
+                System.out.print(value + "(" + vertex.getHeight() + ")");
                 newParents.add(vertex);
             } else {
                 for (int i=0; i<value.length(); i++) {

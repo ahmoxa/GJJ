@@ -20,9 +20,9 @@ public class AVLTreeTest {
         isSorted(tree, 3);
     }
 
-    @Test(timeout = 20000)
+    @Test(timeout = 2000)
     public void testBigTree(){
-        processTest(getConsecutiveNumbers(1000000), false);
+        processTest(getConsecutiveNumbers(1_000_000), false);
     }
 
     private int[] getConsecutiveNumbers(int size) {
@@ -113,45 +113,45 @@ public class AVLTreeTest {
         processDeleteTest(3, new int[]{4});
     }
 
-    @Test
-    public void testRemoveSmallTop() {
-        processDeleteTest(3, new int[]{2, 1, 3});
-    }
-
-    @Test
-    public void testRemoveTops() {
-        processDeleteTest(5, 5);
-    }
-
-    @Test
-    public void testRemoveNoRightNode() {
-        processDeleteTest(6, new int[]{5});
-    }
-
-    @Test
-    public void testRemoveRight() {
-        processDeleteTest(6, new int[]{2, 1});
-    }
-
-    @Test
-    public void testRemoveFromLeft() {
-        processDeleteTest(22, new int[]{16, 15});
-    }
-
-    @Test
-    public void testRemoveWithTurn() {
-        processDeleteTest(6, new int[]{6, 5});
-    }
-
-    @Test
-    public void testRemoveTrickyCase() {
-        processDeleteTest(22, new int[]{9, 15, 13, 14});
-    }
-
-    @Test
-    public void testRemoveTrickyCaseOnTheOtherSide() {
-        processDeleteTest(22, new int[]{15, 9, 10, 11});
-    }
+//    @Test
+//    public void testRemoveSmallTop() {
+//        processDeleteTest(3, new int[]{2, 1, 3});
+//    }
+//
+//    @Test
+//    public void testRemoveTops() {
+//        processDeleteTest(5, 5);
+//    }
+//
+//    @Test
+//    public void testRemoveNoRightNode() {
+//        processDeleteTest(6, new int[]{5});
+//    }
+//
+//    @Test
+//    public void testRemoveRight() {
+//        processDeleteTest(6, new int[]{2, 1});
+//    }
+//
+//    @Test
+//    public void testRemoveFromLeft() {
+//        processDeleteTest(22, new int[]{16, 15});
+//    }
+//
+//    @Test
+//    public void testRemoveWithTurn() {
+//        processDeleteTest(6, new int[]{6, 5});
+//    }
+//
+//    @Test
+//    public void testRemoveTrickyCase() {
+//        processDeleteTest(22, new int[]{9, 15, 13, 14});
+//    }
+//
+//    @Test
+//    public void testRemoveTrickyCaseOnTheOtherSide() {
+//        processDeleteTest(22, new int[]{15, 9, 10, 11});
+//    }
 
     protected void processTest(int[] values) {
         processTest(values, true);

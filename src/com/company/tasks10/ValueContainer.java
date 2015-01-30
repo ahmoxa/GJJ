@@ -59,5 +59,8 @@ public interface ValueContainer {
      */
     List<ValueContainer> asList();
 
+    /**
+     * @return balance factor of this vertex
+     */
     int getBalanceFactor();
 }

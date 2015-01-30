@@ -47,6 +47,9 @@ public class Node implements ValueContainer{
     @Override
     public void setLeft(ValueContainer container) {
         this.left = container;
+        if(container != null){
+            container.setParent(this);
+        }
     }
 
     @Override
@@ -57,6 +60,9 @@ public class Node implements ValueContainer{
     @Override
     public void setRight(ValueContainer container) {
         this.right = container;
+        if(container != null){
+            container.setParent(this);
+        }
     }
 
     @Override
@@ -86,12 +92,6 @@ public class Node implements ValueContainer{
 
     @Override
     public void updateHeights() {
-        if(right != null){
-            right.updateHeights();
-        }
-        if(left != null){
-            left.updateHeights();
-        }
         height = Math.max(this.getRightHeight(), this.getLeftHeight()) + 1;
     }
 
@@ -101,6 +101,7 @@ public class Node implements ValueContainer{
         return (bfactor >= -1 || bfactor <= 1);
     }
 
+    @Override
     public int getBalanceFactor(){
         return getRightHeight() - getLeftHeight();
     }
@@ -122,6 +123,11 @@ public class Node implements ValueContainer{
         return list;
     }
 
+    /**
+     * traverse of subtree with root node in order
+     * @param node
+     * @param asList
+     */
     private void inOrder(ValueContainer node, List<ValueContainer> asList){
         if(node != null){
             inOrder(node.getLeft(), asList);
