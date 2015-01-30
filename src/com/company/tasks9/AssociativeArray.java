@@ -25,7 +25,7 @@ public class AssociativeArray implements Mappable{
      * @param key
      * @param val
      * @return null if new key
-     * @return old value if key contains
+     * @return old value if key already contains
      */
     @Override
     public String add(String key, String val) {
@@ -55,7 +55,7 @@ public class AssociativeArray implements Mappable{
      *
      * @param key
      * @return null if key isn't in AA
-     * @return old value if key is in AA
+     * @return value if key is in AA
      */
     @Override
     public String containsKey(String key) {
